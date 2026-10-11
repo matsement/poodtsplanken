@@ -12,11 +12,12 @@
     <header class="header">
         <div class="container">
             <div class="logo-section">
-                <img src="https://via.placeholder.com/50x50?text=PP" alt="Poodts Planken Logo" class="logo">
+                <div class="logo-icon">🪵</div>
                 <h1 class="brand-name">Poodts Planken</h1>
             </div>
             <nav class="navigation">
                 <a href="#home" class="nav-link">Home</a>
+                <a href="#craftsmanship" class="nav-link">Het Ambacht</a>
                 <a href="#story" class="nav-link">Ons Verhaal</a>
                 <a href="#projects" class="nav-link">Projecten</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -24,29 +25,44 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Product Showcase -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Ambachtelijk Houtwerk</h2>
-            <p>Handgemaakte producten van hoogwaardige eikenhout uit ons eigen bos</p>
-            <a href="#contact" class="cta-button">Neem Contact Op</a>
+            <h2 class="hero-title">Handgemaakte<br>Houten Schatten</h2>
+            <p class="hero-subtitle">Elk stuk vertelt een verhaal van vakmanschap, liefde voor hout en aandacht voor detail.</p>
+            <p class="hero-description">Van boom tot jouw thuis - waaruit geen twee stukken ooit identiek zijn.</p>
+            <a href="#contact" class="cta-button">Laten we iets moois maken</a>
         </div>
-        <div class="hero-image">
-            <img src="https://via.placeholder.com/600x400?text=Poodts+Planken+Producten" alt="Poodts Planken Producten" class="showcase-image">
+        <div class="hero-image-grid">
+            <img src="Houder%20bovenkant.jpeg" alt="Poodts Planken Houder - bovenkant" class="hero-image hero-main" loading="lazy">
+            <img src="Houder%20voorkant.jpeg" alt="Poodts Planken Houder - voorkant" class="hero-image hero-secondary" loading="lazy">
+            <img src="Houder%20achterkant.jpeg" alt="Poodts Planken Houder - achterkant" class="hero-image hero-tertiary" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Craftsmanship Hero Section -->
+    <section id="craftsmanship" class="craftsmanship-hero">
+        <img src="Houtbewerking.jpeg" alt="Houtbewerking - het ambacht in actie" class="craftsmanship-image" loading="lazy">
+        <div class="craftsmanship-overlay">
+            <div class="craftsmanship-content">
+                <h2>Het Ambacht</h2>
+                <p>Waar traditie en passie samenkomen</p>
+            </div>
         </div>
     </section>
 
     <!-- Ons Verhaal Section -->
     <section id="story" class="story">
         <div class="container">
-            <h2>Ons Verhaal</h2>
             <div class="story-content">
                 <div class="story-text">
-                    <h3>Poodts Planken onderscheidt zich door oog voor detail, kwaliteit en persoonlijkheid</h3>
-                    <p>Elk product wordt met zorg geproduceerd uit hoogwaardige materialen. Het eikenhout is afkomstig uit ons eigen bos, waar de bomen zorgvuldig worden geselecteerd en gekapt. Vervolgens worden ze verwerkt tot planken, welke de basis vormen voor onze producten. Hierdoor heeft ieder product zijn eigen karakteristieke uitstraling, dat maakt elk stuk bijzonder.</p>
+                    <h2 class="story-title">Ons Verhaal</h2>
+                    <h3 class="story-subtitle">Poodts Planken onderscheidt zich door oog voor detail, kwaliteit en persoonlijkheid</h3>
+                    <p class="story-paragraph">Elk product wordt met zorg geproduceerd uit hoogwaardige materialen. Het eikenhout is afkomstig uit ons eigen bos, waar de bomen zorgvuldig worden geselecteerd en gekapt.</p>
+                    <p class="story-paragraph">Vanuit mijn werkplaats creëer ik producten die niet alleen mooi zijn, maar ook echt gebruikt worden. Producten met karakter, producten met verhaal.</p>
                 </div>
                 <div class="story-image">
-                    <img src="https://via.placeholder.com/500x400?text=Van+Boom+Tot+Plank" alt="Van boom tot plank proces">
+                    <img src="Opa.jpeg" alt="Het verhaal van Poodts Planken - familietraditie" loading="lazy">
                 </div>
             </div>
         </div>
@@ -57,8 +73,8 @@
         <div class="container">
             <h2>Van Boom Tot Plank</h2>
             <div class="tree-story">
-                <p>Vanaf jongs af aan loop ik al vrolijk rond in het bos van mijn opa. Hier is de liefde voor het werken met hout eigenlijk begonnen. Wij werken al sinds ik mij kan herinneren samen in het bos waarbij we bomen omzagen en herplanten zodat de biodiversiteit op zijn beste is.</p>
-                <p>Een nieuw leven geven aan de gekapte bomen leek mij een mooie taak. Ooit begonnen met een simpele borrelplank heeft ervoor gezorgd dat ik nu met liefde allerlei producten maak van hout en deze liefde graag doorgeef in het product die hier te koop is.</p>
+                <p class="tree-story-text">Vanaf jongs af aan loop ik al vrolijk rond in het bos van mijn opa. Hier is de liefde voor het werken met hout eigenlijk begonnen. Wij werken al sinds ik mij kan herinneren samen met elkaar in het bos.</p>
+                <p class="tree-story-text">Een nieuw leven geven aan de gekapte bomen leek mij een mooie taak. Ooit begonnen met een simpele borrelplank heeft ervoor gezorgd dat ik nu met liefde allerlei producten maak voor mensen die kwaliteit en vakmanschap waarderen.</p>
                 <p class="signature">— Nils Poodt</p>
             </div>
         </div>
@@ -68,36 +84,40 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2>Onze Projecten</h2>
+            <p class="projects-subtitle">Elk project is uniek en gemaakt naar jouw wensen</p>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300?text=Kookboek+Standaard" alt="Eikenhouten Kookboek Standaard">
+                    <div class="project-image-container">
+                        <img src="Houder%20voorkant.jpeg" alt="Eikenhouten Kookboek Houder" class="project-image" loading="lazy">
+                        <div class="project-overlay"></div>
                     </div>
                     <div class="project-info">
-                        <h3>Eikenhouten Kookboek Standaard</h3>
-                        <p>Een uniek eikenhouten kookboek standaard die aan verschillende wensen en eisen voldoet. Zo is deze opklapbaar door de scharnieren. Verstelbaar in welke mate deze rechtop kan staan en heeft deze verstelbare pinnen zodat de breedte van het kookboek niet uitmaakt en kan de bladzijde makkelijk omgeslagen worden.</p>
+                        <h3>Eikenhouten Kookboek Houder</h3>
+                        <p>Een unieke houder die aan verschillende wensen voldoet. Opklapbaar dankzij stevige scharnieren en verstelbaar in hoogte. Mooi aan elke keukentafel.</p>
                         <span class="material-badge">Eikenhout</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+2" alt="Project 2">
+                    <div class="project-image-container">
+                        <img src="Houder%20bovenkant.jpeg" alt="Ambachtelijk Houten Project" class="project-image" loading="lazy">
+                        <div class="project-overlay"></div>
                     </div>
                     <div class="project-info">
-                        <h3>Project Naam</h3>
-                        <p>Beschrijving van dit project. Handgemaakt met liefde en aandacht voor detail.</p>
+                        <h3>Handgemaakte Details</h3>
+                        <p>Elk project wordt afgewerkt met aandacht voor de kleinste details. Van slijpen tot oliëren - alles wordt met liefde gedaan.</p>
                         <span class="material-badge">Eikenhout</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300?text=Project+3" alt="Project 3">
+                    <div class="project-image-container">
+                        <img src="Houder%20achterkant.jpeg" alt="Kwaliteit in de afwerking" class="project-image" loading="lazy">
+                        <div class="project-overlay"></div>
                     </div>
                     <div class="project-info">
-                        <h3>Project Naam</h3>
-                        <p>Beschrijving van dit project. Handgemaakt met liefde en aandacht voor detail.</p>
+                        <h3>Kwaliteit in Afwerking</h3>
+                        <p>Sterkte en schoonheid gaan hand in hand. Ieder stuk wordt zorgvuldig afgewerkt zodat het jaren meegaat.</p>
                         <span class="material-badge">Eikenhout</span>
                     </div>
                 </div>
@@ -108,33 +128,33 @@
     <!-- Contact Sectie -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Neem Contact Op</h2>
-            <p class="contact-intro">Heeft u een idee of vraag? Vul het formulier hieronder in en wij nemen zo snel mogelijk contact met u op!</p>
+            <h2>Laten We Iets Moois Maken</h2>
+            <p class="contact-intro">Heb je een idee of vraag? Vul het formulier in en ik neem zo snel mogelijk contact met je op!</p>
             
             <form class="contact-form" id="contactForm">
                 <div class="form-group">
-                    <label for="name">Naam *</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Je Naam *</label>
+                    <input type="text" id="name" name="name" placeholder="Hoe heet je?" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">E-mailadres *</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="je@voorbeeld.nl" required>
                 </div>
 
                 <div class="form-group">
                     <label for="phone">Telefoonnummer</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" placeholder="06 - 1234 5678">
                 </div>
 
                 <div class="form-group">
-                    <label for="subject">Onderwerp *</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <label for="subject">Wat kan ik voor je maken? *</label>
+                    <input type="text" id="subject" name="subject" placeholder="Vertel over je idee..." required>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Bericht *</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <label for="message">Meer Details *</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Beschrijf je project verder..." required></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn">Verstuur Bericht</button>
@@ -144,14 +164,14 @@
                 <div class="info-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
-                        <h4>Adres</h4>
+                        <h4>Locatie</h4>
                         <p>Te bepalen</p>
                     </div>
                 </div>
                 <div class="info-item">
                     <i class="fas fa-phone"></i>
                     <div>
-                        <h4>Telefoon</h4>
+                        <h4>Telefoonnummer</h4>
                         <p>Te bepalen</p>
                     </div>
                 </div>
@@ -169,8 +189,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Poodts Planken. Alle rechten voorbehouden.</p>
             <p>Handgemaakte houten producten met liefde gemaakt.</p>
+            <p>&copy; 2024 Poodts Planken. Alle rechten voorbehouden.</p>
         </div>
     </footer>
 
