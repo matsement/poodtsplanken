@@ -114,7 +114,7 @@ if ('IntersectionObserver' in window) {
 }
 
 // Add text reveal animation on scroll
-const textElements = document.querySelectorAll('.story-paragraph, .tree-story-text');
+const textElements = document.querySelectorAll('.story-paragraph');
 textElements.forEach((el, index) => {
     el.style.opacity = '0.8';
     el.addEventListener('mouseenter', function() {
