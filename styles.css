@@ -730,6 +730,10 @@ body {
         height: 180px;
     }
 
+    .hero-text{
+    margin-left: 0px;
+     }
+
     .craftsmanship-hero {
         height: 300px;
     }
