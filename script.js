@@ -123,6 +123,5 @@ textElements.forEach((el, index) => {
     });
     el.addEventListener('mouseleave', function() {
         this.style.opacity = '0.8';
-        this.style.color = 'white';
     });
 });
