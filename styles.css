@@ -101,6 +101,7 @@ body {
 .hero {
     background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
     padding: 100px 20px;
+    margin-left: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -699,9 +700,7 @@ body {
     }
 
     .navigation {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
+        display: none;
     }
 
     .hero {
