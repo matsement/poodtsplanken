@@ -69,19 +69,7 @@ document.querySelectorAll('.project-card').forEach(card => {
     observer.observe(card);
 });
 
-// Add parallax effect to craftsmanship section
-window.addEventListener('scroll', () => {
-    const craftSection = document.querySelector('.craftsmanship-image');
-    if (craftSection) {
-        const scrollPosition = window.pageYOffset;
-        const elementPosition = craftSection.parentElement.offsetTop;
-        const distance = scrollPosition - elementPosition;
-        
-        if (distance > -window.innerHeight && distance < window.innerHeight) {
-            craftSection.style.transform = `translateY(${distance * 0.5}px)`;
-        }
-    }
-});
+
 
 // Add active state to navigation based on scroll position
 window.addEventListener('scroll', () => {
@@ -135,6 +123,6 @@ textElements.forEach((el, index) => {
     });
     el.addEventListener('mouseleave', function() {
         this.style.opacity = '0.8';
-        this.style.color = '#555555';
+        this.style.color = 'white';
     });
 });
