@@ -12,39 +12,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission
+// Contact form: allow FormSubmit to send the form normally
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const data = {
-            name: formData.get('name'),
-            email: formData.get('email'),
-            phone: formData.get('phone'),
-            subject: formData.get('subject'),
-            message: formData.get('message')
-        };
-        
-        // Log form data (in a real scenario, this would be sent to a server)
-        console.log('Form submitted:', data);
-        
-        // Show success message
+    contactForm.addEventListener('submit', function() {
         const submitBtn = this.querySelector('.submit-btn');
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = '✓ Bericht verzonden!';
-        submitBtn.style.background = 'linear-gradient(135deg, #6B4423 0%, #3D2817 100%)';
-        
-        // Reset form
-        this.reset();
-        
-        // Reset button after 3 seconds
-        setTimeout(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.style.background = '';
-        }, 3000);
+        if (submitBtn) {
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = '✓ Bericht verzonden...';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        }
     });
 }
 
